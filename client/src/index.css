@@ -1,0 +1,319 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* table */
+.ant-table-wrapper {
+  font-family: "Poppins", sans-serif;
+}
+
+.ant-table-wrapper .ant-table-thead > tr > th {
+  font-size: 14px;
+  background-color: #f8f9fd;
+  color: #0d1458;
+}
+
+.ant-table-tbody > tr td {
+  font-size: 14px;
+  color: #848ba2;
+}
+
+.ant-table-filter-dropdown
+  > .ant-table-filter-dropdown-btns
+  > .ant-btn-primary {
+  background-color: #1677ff;
+}
+
+/* antd form */
+
+.ant-input,
+.ant-input-number,
+.ant-input-password,
+.ant-select .ant-select-selector,
+.ant-picker {
+  border-radius: 4px !important;
+}
+
+.ant-input-disabled,
+.ant-picker-disabled,
+.ant-input-number-disabled,
+.ant-select-disabled .ant-select-selector {
+  background-color: #f4f4f6 !important;
+}
+
+.ant-input,
+.ant-input:hover,
+.ant-input:focus,
+.ant-input:active,
+.ant-input-number,
+.ant-input-number:hover,
+.ant-input-number:focus,
+.ant-input-number:active,
+.ant-input-password,
+.ant-input-password:hover,
+.ant-input-password:focus,
+.ant-input-password:active,
+.ant-select .ant-select-selector,
+.ant-select-selector:hover,
+.ant-select-selector:focus,
+.ant-select-selector:active,
+.ant-select-open .ant-select-selector,
+.ant-picker,
+.ant-picker:hover,
+.ant-picker:focus,
+.ant-picker:active {
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
+}
+
+.ant-input-status-error,
+.ant-input-status-error:hover,
+.ant-input-status-error:focus,
+.ant-input-status-error:active,
+.ant-input-number-status-error,
+.ant-input-number-status-error:hover,
+.ant-input-number-status-error:focus,
+.ant-input-number-status-error:active,
+.ant-input-affix-wrapper-status-error,
+.ant-input-affix-wrapper-status-error:hover,
+.ant-input-affix-wrapper-status-error:focus,
+.ant-input-affix-wrapper-status-error:active,
+.ant-select-status-error .ant-select-selector,
+.ant-select-status-error:hover .ant-select-selector,
+.ant-select-status-error:focus .ant-select-selector,
+.ant-select-status-error:active .ant-select-selector {
+  border-color: #ff4d4f !important;
+}
+
+/* https://github.com/react-component/switch/issues/27 */
+.ant-switch-checked {
+  background: #3547ac !important;
+}
+
+/* modal */
+.ant-modal-content .ant-modal-close {
+  background-color: white !important;
+}
+.ant-modal-content .ant-modal-close .ant-modal-close-x .anticon-close svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* step */
+.ant-steps .ant-steps-item-finish .ant-steps-icon-dot {
+  background-color: #3547ac !important;
+  border: none;
+}
+
+.ant-steps .ant-steps-item-finish .ant-steps-item-tail::after {
+  background-color: #3547ac !important;
+  border: none;
+}
+.ant-steps .ant-steps-item-process .ant-steps-icon-dot {
+  background-color: #3547ac !important;
+  border: none;
+}
+
+/* description detail */
+.ant-descriptions-item-label {
+  background-color: #f8f9fd !important;
+}
+
+/* tabs */
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #3547ac !important;
+}
+.ant-tabs-ink-bar {
+  background-color: #3547ac !important;
+}
+
+.ant-tabs-tab:hover {
+  color: #3547ac !important;
+}
+
+/* legend chart */
+.chartjs-render-monitor .chartjs-legend ul {
+  margin-top: 30px !important;
+}
+
+/*swiper*/
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+/* landing */
+.hero-image-home {
+  background-image: url("./assets/images/hero2.png");
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.hero-motto {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.7);
+}
+
+.hero-image-visitation {
+  background-image: url("./assets/images/hero-visitation2.png");
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.hero-image-medical-record,
+.hero-image-detail-medical-record,
+.hero-image-prescription {
+  background-image: url("./assets/images/hero-medical-record2.png");
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.hero-image-account-setting {
+  background-image: url("./assets/images/hero-account-setting2.png");
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 560px) {
+  .hero-image-home {
+    background-image: url("./assets/images/hero2.png");
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-image-visitation {
+    background-image: url("./assets/images/hero-visitation2.png");
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero-image-medical-record,
+  .hero-image-detail-medical-record,
+  .hero-image-prescription {
+    background-image: url("./assets/images/hero-medical-record2.png");
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-image-account-setting {
+    background-image: url("./assets/images/hero-account-setting2.png");
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* collapse */
+.ant-collapse {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ant-collapse-item {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.ant-collapse-content {
+  border-top: none !important;
+  box-shadow: none !important;
+  padding-left: 0 !important;
+}
+
+.ant-collapse-content-box {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* badge status */
+.ant-badge-status-dot {
+  height: 8px !important;
+  width: 8px !important;
+}
+
+.ant-badge-status-dot::after {
+  background-color: #414fcd !important;
+  color: #414fcd !important;
+}
+
+/* pagination */
+
+.ant-pagination .ant-pagination-item-active {
+  border-color: #3547ac !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #3547ac !important;
+}
+
+/* checkbox  prescription*/
+.checkbox-prescription {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.checkbox-prescription .ant-checkbox-inner {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.checkbox-prescription .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #3547ac !important;
+  border-color: #3547ac !important;
+}
+
+.checkbox-prescription .ant-checkbox-disabled .ant-checkbox-inner {
+  background-color: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+}
+
+.checkbox-prescription .ant-checkbox-inner::after {
+  width: 6px !important;
+  height: 12px !important;
+  top: 40% !important;
+  left: 55% !important;
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+}
